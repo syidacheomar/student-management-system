@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+    <main>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="mathScores">Math Scores:</label>
+            <input type="number" id="mathScores" name="mathScores" required><br>
+
+            <label for="scienceScores">Science Scores:</label>
+            <input type="number" id="scienceScores" name="scienceScores" required><br>
+
+            <label for="englishScores">English Scores:</label>
+            <input type="number" id="englishScores" name="englishScores" required><br>
+
+            <button type="button" onclick="addStudent()">Add Student</button>
+        </form>
+        <div id="studentDetails"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Student Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
